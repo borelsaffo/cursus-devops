@@ -76,7 +76,7 @@ Resources:
           Ebs:
             VolumeSize: 20
       KeyName: !Ref 'KeyName'
-      ImageId: 'ami-0057d8e6fb0692b80'
+      ImageId: 'ami-0057d8e6fb0692b80'  # Je pense qu'il serais mieux de mettre l'ID d'une image communautaire comme : 'ami-0b5eea76982371e91'
       IamInstanceProfile: !Ref eksDeployInstanceProfile
       UserData:
         'Fn::Base64':
